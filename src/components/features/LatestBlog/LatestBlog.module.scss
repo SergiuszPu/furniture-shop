@@ -1,0 +1,74 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  height: 100%;
+
+  .panelBar {
+    position: relative;
+
+    :global(.row) > * {
+      border-bottom: 4px solid lightgray;
+    }
+
+    .heading {
+      position: relative;
+
+      h3 {
+        color: $primary;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 38px;
+        margin: 0;
+        letter-spacing: 1px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 45px;
+        border-bottom: 4px solid $primary;
+      }
+    }
+  }
+
+  .blogBlog {
+    margin: 25px 0;
+    display: flex;
+    background-color: white;
+  }
+}
+
+.dots {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.dots ul {
+  margin: 0;
+  padding: 0 0 0 1rem;
+  list-style: none;
+  background-color: white;
+  transform: translateY(15px);
+}
+
+.dots ul li {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.dots ul li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: lightgray;
+  font-size: 0;
+
+  &.active,
+  &:hover {
+    background-color: $primary;
+  }
+}

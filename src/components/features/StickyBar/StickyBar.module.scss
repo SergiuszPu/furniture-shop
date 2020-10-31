@@ -1,0 +1,64 @@
+@import "../../../styles/settings.scss";
+
+.wrapper {
+    background-color: rgba(255,255,255, 0.8);
+    position: fixed;
+    max-width: 560px;
+    bottom: 10px;
+    margin: 2px;
+    right: 100px;
+    border: 2px solid #e07822;
+    height: 150px;
+    z-index: 100;
+    display: flex;
+    overflow: hidden;
+    
+
+    .dontshow {
+        display: none;
+    }
+  
+    .image {
+        position: relative;
+    
+        .close {
+            visibility: hidden;
+            left: 25px;
+            top: 25px;
+            position: absolute;
+        }
+    
+        .button {
+            color: #e07822;
+            position: absolute;
+            right: 30px;
+            top: 90px;
+            font-size: 20px;
+        }
+    
+        img {
+            height: 120px;
+            width:  120px;
+            margin: 10px;
+            object-fit: cover;
+            position: relative;
+            overflow: hidden;
+            align-items: flex-end;
+            position: relative;
+        }
+    }
+    
+    .image:hover {
+        .close {
+            visibility: visible;
+            color: #e07822;
+            left: 25px;
+            top: 25px;
+            cursor: pointer;
+            position: absolute;
+            font-size: 25px;
+        }
+    }
+    
+}  
+

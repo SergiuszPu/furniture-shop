@@ -1,0 +1,188 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  background-color: $header-bg;
+  height: 200px;
+  margin-top: 20px;
+  width: 100%;
+
+  h1 {
+    margin: 60px 0 0 0;
+    font-size: 65px;
+    line-height: 42px;
+    color: $lightSilver;
+    font-weight: 500;
+
+    span {
+      font-weight: 100;
+    }
+  }
+
+  p {
+    margin: 10px 0 0 8px;
+    font-size: 30px;
+    line-height: 42px;
+    color: $lightSilver;
+    font-weight: 300;
+    letter-spacing: 11px;
+
+    span {
+      color: $orange;
+    }
+  }
+
+  h2 {
+
+    padding-top: 7px;
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    color: silver;
+    font-size: 14px;
+
+    span {
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 320px) {
+  .root {
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 27px;
+    }
+
+    p {
+      margin: 0 0 0 8px;
+      font-size: 15px;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    h2 {
+
+      padding-top: 7px;
+      margin-top: 30px;
+
+    }
+
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .root {
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 33px;
+    }
+
+    p {
+      margin: 0 0 0 8px;
+      font-size: 15px;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    h2 {
+
+      padding-top: 7px;
+      margin-top: 30px;
+
+    }
+
+  }
+}
+
+@media (min-width: 376px) and (max-width: 500px) {
+  .root {
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 39px;
+    }
+
+    p {
+      margin: 0 0 0 8px;
+      font-size: 15px;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    h2 {
+
+      padding-top: 7px;
+      margin-top: 30px;
+
+    }
+
+  }
+
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .root {
+
+    h1 {
+      margin: 40px 0 0 0;
+      font-size: 39px;
+    }
+
+    p {
+      margin: 10px 0 0 8px;
+      font-size: 15px;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    h2 {
+
+      padding-top: 7px;
+      margin-top: 30px;
+
+    }
+
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .root {
+
+    h1 {
+      margin: 40px 0 0 0;
+      font-size: 45px;
+    }
+
+    p {
+      margin: 10px 0 0 8px;
+      font-size: 15px;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    h2 {
+
+      padding-top: 7px;
+      margin-top: 30px;
+
+    }
+
+  }
+
+}

@@ -1,0 +1,72 @@
+@import "../../../styles/settings.scss";
+.details {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.price {
+    width: 100px;
+    height: 100px;
+    background-color: $gallery-price;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: $text-color-light;
+    opacity: 0.8;
+    border-radius: 50%;
+    z-index: 5;
+    flex-direction: column;
+    margin-bottom: 65px;
+  
+    h5, h6 {
+      margin: 0;
+      opacity: 1;
+    }
+    h6 {
+        text-decoration: line-through;
+    }
+  }
+  
+  .description {
+    position: absolute;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    width: 200px;
+    height: 90px;
+    font-size: 13px;
+    background-color: $text-color-light;
+    flex-direction: column;
+    overflow: hidden;
+  
+    h5 {
+      font-size: 16px;
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 60px;
+      top: -30px;
+      left: -5px;
+      transform: rotate(45deg);
+      background-color: $primary;
+    }
+  
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 60px;
+      bottom: -30px;
+      right: -5px;
+      transform: rotate(45deg);
+      background-color: $text-color;
+    }
+  }

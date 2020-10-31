@@ -1,0 +1,108 @@
+@import "../../../styles/settings.scss";
+
+.root {
+
+  .wrapper {
+    border: 1px solid $more-border;
+    margin-bottom: 50px;
+    padding: 0;
+
+
+    .heading {
+      width: 100%;
+      display: flex;
+
+      h3 {
+        margin-right: auto
+      }
+
+      .control {
+        width: 32px;
+
+        &:hover {
+          background-color: $primary;
+          border: none;
+        }
+      }
+    }
+
+    .review {
+      width: 100%;
+      display: flex;
+      border-bottom: 1px solid $more-border;
+      padding: 5px 0 20px 0;
+
+      .stars {
+        a {
+          margin: 0;
+        }
+      }
+
+      p {
+        margin-left:10px;
+        border-right: 1px solid $more-border;
+        padding-right: 10px;
+      }
+
+      a {
+        margin-left: 10px;
+      }
+    }
+
+    .pricing {
+      display: flex;
+      width: 100%;
+      border-bottom: 1px solid $more-border;
+      padding: 20px 0;
+
+      .price {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+
+      .oldPrice {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: line-through;
+        text-decoration-thickness: 2px;
+        text-decoration-color: $text-color;
+      }
+    }
+
+    .overview {
+      padding: 20px 0;
+      border-bottom: 1px solid $more-border;
+
+      h5 {
+        font-weight: 600;
+      }
+    }
+
+    .stock {
+      padding: 20px 0;
+      border-bottom: 1px solid $more-border;
+      text-transform: capitalize;
+
+      p:first-of-type {
+        span {
+        margin-right: 10px;
+        }
+      }
+
+      p:last-of-type {
+        span {
+          margin-right: 25px;
+        }
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

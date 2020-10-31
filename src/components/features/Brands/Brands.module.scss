@@ -1,0 +1,70 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  .wrapper {
+    padding: 60px 0;
+    display: flex;
+    height: 140px;
+    width: 100%;
+    margin: 60px auto;
+    border-top: 2px solid $newFurniture-line;
+    border-bottom: 2px solid $newFurniture-line;
+    align-items: center;
+
+    .control {
+      height: 92px;
+      width: 30px;
+      background: $brands-controls;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+
+      .icon {
+        color: $text-color-light;
+        font-size: 15px;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        .icon {
+          color: $primary;
+        }
+      }
+    }
+
+    .logoBox {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 10px;
+      overflow: hidden;
+
+      .logo {
+        height: 92px;
+        max-width: 152px;
+        border: 2px solid $newFurniture-line;
+        padding: 10px;
+        margin: 0 10px;
+
+        @media (max-width: 992px) {
+          min-width: calc(33.33% - 20px);
+        }
+
+        @media (max-width: 767px) {
+          min-width: calc(50% - 20px);
+        }
+
+        @media (max-width: 560px) {
+          min-width: calc(100% - 20px);
+        }
+
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+

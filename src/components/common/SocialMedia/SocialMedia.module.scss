@@ -1,0 +1,53 @@
+@import "../../../styles/settings.scss";
+
+.socials {
+  display: flex;
+  padding: 20px 0;
+  margin-left: 0;
+
+  a {
+    height: 34px;
+    text-decoration: none;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  @mixin socialBtn ($brand-color) {
+    svg {
+    color: $brand-color;
+    }
+
+    &:hover {
+      background: $brand-color;
+      border: none;
+
+      svg{
+        color: $text-color-light;
+      }
+    }
+  }
+
+  .fb {
+    @include socialBtn ($social-fb);
+  }
+
+  .gplus {
+    @include socialBtn($social-gplus);
+  }
+
+  .twitter {
+    @include socialBtn($social-twitter);
+  }
+
+  .pinterest {
+    @include socialBtn($social-pinterest);
+  }
+
+  .linkedin {
+    @include socialBtn($social-linkedin);
+  }
+
+
+}

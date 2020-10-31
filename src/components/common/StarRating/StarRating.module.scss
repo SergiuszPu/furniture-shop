@@ -1,0 +1,17 @@
+@import "../../../styles/settings.scss";
+
+.stars {
+  color: $text-color;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover {
+    color: $primary;
+  }
+  
+  .StarsRated {
+    color: $primary;
+  }
+}

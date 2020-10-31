@@ -1,0 +1,71 @@
+/* Color palette DONT'T USE IN ANY OTHER FILE THAN THIS*/
+/* Global color settings */
+/*Component color settings */
+/*  Hover animation settings*/
+.root .wrapper {
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 140px;
+  width: 100%;
+  margin: 60px auto;
+  border-top: 2px solid #e2e2e2;
+  border-bottom: 2px solid #e2e2e2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .wrapper .control {
+  height: 92px;
+  width: 30px;
+  background: #2a2a2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+}
+
+.root .wrapper .control .icon {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.root .wrapper .control:hover {
+  cursor: pointer;
+}
+
+.root .wrapper .control:hover .icon {
+  color: #d58e32;
+}
+
+.root .wrapper .logoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.root .wrapper .logoBox .logo {
+  height: 92px;
+  width: 142px;
+  border: 2px solid #e2e2e2;
+  padding: 10px;
+}
+
+.root .wrapper .logoBox .logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=Brands.module.css.map */

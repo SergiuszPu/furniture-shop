@@ -1,0 +1,45 @@
+/* Color palette DONT'T USE IN ANY OTHER FILE THAN THIS*/
+/* Global color settings */
+/*Component color settings */
+/*  Hover animation settings*/
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0;
+}
+
+.item {
+  margin: 0 px;
+}
+
+.item2 {
+  margin: 0px;
+}
+
+.line {
+  margin: 0 10px;
+  border-bottom: 1px solid #2a2a2a;
+  position: relative;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 30px;
+  border-bottom: 4px solid #d58e32;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*# sourceMappingURL=PromotedBox.module.css.map */

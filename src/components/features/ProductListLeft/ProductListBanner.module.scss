@@ -1,0 +1,128 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  .row {
+    border-bottom: 1px solid $productListBorder;
+    margin: 20px 0 50px 0;
+    padding: 10px 0;
+
+    .header {
+      text-transform: uppercase;
+    }
+
+    .colTwo,
+    .colThree,
+    .colFour {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        margin: 0;
+        padding: 3px 0;
+      }
+
+      .description {
+        font-weight: 500;
+      }
+    }
+
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding-left: 0;
+      display: none;
+      position: absolute;
+      left: 10px;
+      background-color: $productList-banner;
+    }
+
+    ul li {
+      float: left;
+      position: relative;
+      text-decoration: none;
+      width: 100%;
+      padding: 5px;
+      border: 1px solid $productListBorder;
+      border-top: none;
+      background-color: $productList-banner-hv;
+
+      &:hover {
+        a {
+          color: $primary;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        padding-left: 6px;
+      }
+    }
+  }
+
+  .dropdown {
+    position: relative;
+
+    button {
+      margin-left: 10px;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $productListBorder;
+      height: 44px;
+
+      &:hover {
+        color: $primary;
+        background-color: $productList-banner-hv;
+      }
+
+      p {
+        padding: 5px;
+      }
+
+      .dropdownIconOne,
+      .dropdownIconTwo {
+        margin-right: 5px;
+      }
+
+      .dropdownIconOne {
+        margin-left: 40px;
+      }
+
+      .dropdownIconTwo {
+        margin-left: 20px;
+      }
+    }
+
+    &:hover {
+      ul {
+        display: block;
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 44px;
+    width: 70px;
+
+    .icon {
+      font-size: 30px;
+      padding: 5px;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    .active {
+      color: $primary;
+    }
+  }
+}

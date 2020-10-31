@@ -1,0 +1,149 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  border: 1px solid $form-border-color;
+  display: flex;
+  height: 45px;
+  max-width: 500px;
+  color: $text-color;
+
+
+  .category {
+    border-right: 1px solid $form-border-color;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    max-width: 55%;
+
+
+    .mainCategoryList {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      height: 100%;
+      width: 200px;
+
+      .mainCategory {
+        display: block;
+        border: none;
+        margin: 0 20px;
+        left:-10%;
+        background-color: transparent;
+        top: 25%;
+      }
+
+      .secCategory a {
+        margin: 0 55px;
+      }
+
+
+      li {
+        display:none;
+        position: relative;
+        padding-left: 25px;
+        background-color: white ;
+        width: 119.5%;
+        height: 100%;
+        border: 1px solid $form-border-color;
+      }
+    }
+
+    .mainCategoryList:hover {
+      .secCategory {
+        display: block;
+        left:-19%;
+      }
+    }
+
+
+
+    .mainCategoryList {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+
+      .mainCategory {
+        display: block;
+        border: none;
+        margin: 0 60px;
+        left: -20%;
+        background-color: transparent;
+        top: 25%;
+      }
+
+      .secCategory a {
+        margin: 0 55px;
+      }
+
+
+      li {
+        display: none;
+        position: relative;
+        padding-left: 25px;
+        background-color: white;
+        width: 119.5%;
+        height: 100%;
+        border: 1px solid $form-border-color;
+        border-bottom: none;
+
+        &:last-of-type {
+          border-bottom: 1px solid $form-border-color;
+        }
+      }
+    }
+
+    .mainCategoryList:hover {
+      .secCategory {
+        display: block;
+        left: -19%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+   }  
+
+    .icon:first-child {
+      color: $primary;
+      position: absolute;
+      left: 10px;
+      z-index: 0;
+    }
+
+    .icon:last-child {
+      position: absolute;
+      right: 5px;
+      z-index: 0;
+    }
+
+
+  }
+
+  .searchField {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+
+    input {
+      border: 0;
+      padding-left: 10px;
+      font-size: 14px;
+      outline: none;
+
+      &::placeholder {
+        color: $text-color;
+      }
+    }
+
+    button {
+      border: 0;
+      background-color: transparent;
+      outline: none;
+      position: absolute;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  position: relative;
+  padding: 1rem 10px;
+
+  .row {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      text-decoration: none;
+
+      .textExampleTest .testExampleMain {
+        color: $primary;
+      }
+
+      .textExampleTest .button1 {
+        background-color: $primary;
+        border: none;
+      }
+    }
+
+    .textExampleTest {
+      padding: 35px;
+
+      .testExampleMain {
+        color: black;
+        letter-spacing: 1.1px;
+        font-weight: bold;
+        line-height: 24px;
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 16px;
+        color: black;
+        text-align: justify;
+        line-height: 24px;
+      }
+
+      .icon {
+        color: yellow;
+        font-size: 26px;
+      }
+
+      .button1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        left: 26%;
+        top: 15px;
+        padding: 10px 24px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: black;
+      }
+    }
+
+    .images {
+      position: relative;
+      background: {
+        color: white;
+        size: cover;
+        position: center;
+        height: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .info {
+        font-size: 14px;
+        width: 80%;
+        padding: 10px 15px;
+        display: flex;
+        position: absolute;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: white;
+        bottom: 0;
+      }
+
+      .date {
+        text-align: left;
+        color: black;
+      }
+
+      .comments {
+        text-align: right;
+        color: black;
+      }
+
+      * {
+        flex: 2 4 auto;
+      }
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}

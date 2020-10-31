@@ -1,0 +1,22 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  background-color: $lightSilver;
+  height: 42px;
+  width: 100%;
+
+  h1 {
+    font-size: 65px;
+    line-height: 42px;
+    color: $darkGray2;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+
+    span {
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}

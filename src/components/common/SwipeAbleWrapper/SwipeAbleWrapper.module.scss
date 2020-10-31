@@ -1,0 +1,28 @@
+@import "../../../styles/settings.scss";
+
+.swiper-container {
+  position: relative;
+  padding-top: 40px!important;
+
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  bottom: auto !important;
+  left: auto !important;
+  width: auto !important;
+
+
+    .swiper-pagination-bullet-active{
+      background-color: $orange;
+    }
+
+     .swiper-pagination-bullet{
+       width: 20px;
+       height: 20px;
+     }
+}
+
+

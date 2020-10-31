@@ -1,0 +1,131 @@
+/* Color palette DONT'T USE IN ANY OTHER FILE THAN THIS*/
+/* Global color settings */
+/*Component color settings */
+/*  Hover animation settings*/
+.root {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 2rem;
+}
+
+.root .photo {
+  position: relative;
+  height: 260px;
+  background-color: #f4f5f7;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.root .photo .sale {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #292929;
+  border-radius: 50%;
+  color: #ffffff;
+  padding: 30px 15px 5px 15px;
+  z-index: 1;
+}
+
+.root .photo .buttons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  visibility: hidden;
+}
+
+.root .photo img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.root .content {
+  text-align: center;
+  padding: 20px;
+}
+
+.root .content h5 {
+  color: #d58e32;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.root .content a:hover {
+  text-decoration: none;
+}
+
+.root .line {
+  margin: 0 10px;
+  border-bottom: 1px solid #2a2a2a;
+  position: relative;
+}
+
+.root .line::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 30px;
+  border-bottom: 4px solid #d58e32;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.root .active {
+  background-color: #d58e32;
+}
+
+.root .active:hover {
+  background-color: #ffcc99;
+}
+
+.root .actions {
+  padding: 15px 10px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .actions .favor:hover {
+  background-color: #ffcc99;
+}
+
+.root:hover .buttons {
+  visibility: visible;
+}
+
+.root:hover .price > div {
+  background-color: #d58e32;
+}
+
+.root .oldPrice {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  -webkit-text-decoration-color: #2a2a2a;
+          text-decoration-color: #2a2a2a;
+}
+/*# sourceMappingURL=ProductBox.module.css.map */

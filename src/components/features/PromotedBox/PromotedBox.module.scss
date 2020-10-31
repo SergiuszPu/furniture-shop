@@ -1,0 +1,37 @@
+@import "../../../styles/settings.scss";
+
+.root {
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: stretch;
+  box-sizing: content-box;
+  padding: 0;
+}
+
+.item {
+  margin: 0 px;
+}
+
+.item2 {
+  margin: 0px;
+}
+
+.line {
+  margin: 0 10px;
+  border-bottom: 1px solid $productBox-line;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 30px;
+    border-bottom: 4px solid $primary;
+    transform: translateX(-50%);
+  }
+}

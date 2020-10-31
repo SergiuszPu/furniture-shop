@@ -1,0 +1,55 @@
+@import "../../../styles/settings.scss";
+
+.icons {
+  position: absolute;
+  left: 2%;
+   align-self: center;
+
+  ul {
+    margin: 10px;
+    padding: 0;
+
+    li {
+      list-style: none;
+      position: relative;
+      display: flex;
+      margin-bottom: 10px;
+      color: $text-color;
+
+      &:hover .tooltip {
+        position: relative;
+        font-size: 11px;
+        color: $text-color-light;
+        background-color: $button-bg;
+        padding: 0 20px;
+        margin-left: 20px;
+        height: 30px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background-color: $button-bg;
+          transform: rotate(45deg);
+          left: -3px;
+          top: 5px;
+        }
+      }
+      &:hover .icon {
+        color: $primary;
+        background-color: inherit;
+        border-color: $primary;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+
+  .tooltip {
+    display: none;
+  }
+}

@@ -1,0 +1,97 @@
+$base-padding: 24px;
+
+/* Color palette DONT'T USE IN ANY OTHER FILE THAN THIS*/
+$darkGray1: #292929;
+$darkGray2: #2a2a2a;
+$gray1: #363636;
+$gray2: #434343;
+$gray3: #676767;
+$lightGray: #b6b6b6;
+$lightGray1: #a9a9a9;
+$orange: #d58e32;
+$lightSilver: #d8d8d8;
+$light: #e2e2e2;
+$light1: #e1e1e1;
+$light2: #f4f5f7;
+$light3: #e0e3ed;
+$white: #ffffff;
+$green: #2F8F64;
+$fb: #3b5998;
+$gplus: #db4437;
+$twitter: #1da1f0;
+$pinterest: #e60023;
+$linkedin: #2867b2;
+
+/* Global color settings */
+$primary: $orange;
+
+$text-color: $darkGray2;
+$text-color-light: $white;
+
+/*Component color settings */
+$header-topbar-bg: $gray2;
+$header-bg: $gray1;
+
+$footer-claim-bg: $darkGray2;
+$footer-bg: $gray1;
+$footer-text: $lightGray1;
+
+$form-border-color: $darkGray1;
+
+$button-bg: $darkGray2;
+$button-text: $white;
+
+$featureBox-border: $lightGray;
+$featureBox-bg: $white;
+
+$productBox-bg: $white;
+$productBox-border: $light1;
+$productBox-photo-bg: $light2;
+$productBox-line: $darkGray2;
+$productBox-sale-bg: $darkGray1;
+
+$newFurniture-line: $light;
+$newFurniture-menuLink: $darkGray2;
+$newFurniture-dots-bg:$white;
+$newFurniture-dots-color: $light1;
+
+$companyClaim-phoneNum: $lightSilver;
+$companyClaim-cart: $light3;
+
+$brands-controls: $darkGray2;
+
+$more-border: $lightGray;
+$more-text: $gray3;
+
+$social-fb: $fb;
+$social-gplus: $gplus;
+$social-twitter: $twitter;
+$social-pinterest: $pinterest;
+$social-linkedin: $linkedin;
+
+/*  Hover animation settings*/
+$property-1: background;
+$property-2: color;
+$duration-1: 250ms;
+$duration-2: 250ms;
+$transform: translateY(-5%);
+
+%hover-animation {
+  transition-property: $property-1, $property-2;
+  transition-duration: $duration-1, $duration-2;
+  transform: $transform;
+}
+$gallery-bg: $lightGray1;
+$gallery-border: $light;
+$gallery-bg2: $light1;
+$gallery-price: $gray2;
+
+$productListBorder: $lightGray;
+$productList-banner: $light;
+$productList-banner-hv: $light2;
+
+
+
+
+$gallery-green: $green;
+$gallery-tab: $light3;

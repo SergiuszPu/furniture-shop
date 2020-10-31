@@ -1,0 +1,140 @@
+/* Color palette DONT'T USE IN ANY OTHER FILE THAN THIS*/
+/* Global color settings */
+/*Component color settings */
+/*  Hover animation settings*/
+.panelBar {
+  background: #000000;
+  padding: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.panelBar .title {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #f8f5f5;
+}
+
+.panelBar .dots {
+  height: 15px;
+  -webkit-transform: translateY(-29px);
+          transform: translateY(-29px);
+  background-color: white;
+}
+
+.times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 200px;
+  left: 45px;
+  display: none;
+}
+
+.time {
+  width: 70px;
+  height: 70px;
+  background-color: #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  opacity: 0.8;
+  border-radius: 50%;
+  z-index: 5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.time h5, .time h6 {
+  margin: 0;
+  opacity: 1;
+}
+
+.time h6 {
+  font-size: 15px;
+}
+
+.addtocartbtn {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  display: none;
+}
+
+.dots {
+  position: relative;
+  background: #000000;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dots ul {
+  margin: 0;
+  list-style: none;
+  background-color: #000000;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.dots ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.dots ul li a {
+  font-size: 0;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.dots ul li a.active, .dots ul li a:hover {
+  background-color: #d58e32;
+}
+
+@media (max-width: 450px) {
+  .component {
+    display: none;
+  }
+  .panelBar {
+    display: none;
+  }
+  .dots {
+    display: none;
+  }
+}
+
+.component img {
+  height: 224px;
+}
+
+.component:hover .times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.component:hover .addtocartbtn {
+  display: inline;
+}
+/*# sourceMappingURL=LeftSlider.module.css.map */
